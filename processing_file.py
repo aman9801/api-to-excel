@@ -14,8 +14,8 @@ def read_excel(name):
   city1 = sheet1["A1"].value
   city2 = sheet2["A1"].value
   # requesting the data from API
-  url1 = f"https://api.openweathermap.org/data/2.5/weather?q={city1}&appid=9821d430bd99ea2cf1e664d59fc7b028"
-  url2 = f"https://api.openweathermap.org/data/2.5/weather?q={city2}&appid=9821d430bd99ea2cf1e664d59fc7b028"
+  url1 = f"https://api.openweathermap.org/data/2.5/weather?q={city1}&appid=your-unique-id"
+  url2 = f"https://api.openweathermap.org/data/2.5/weather?q={city2}&appid=your-unique-id"
   r1 = requests.get(url1)
   r2 = requests.get(url2)
   data1 = r1.json()
